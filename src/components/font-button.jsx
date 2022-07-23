@@ -1,7 +1,7 @@
 import React from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { fontSizeState } from "../atoms/font-size";
-import { fontSizeLabelState } from "../selectors/font-size-label-state";
+import { fontSizeState } from "../store/atoms/font-size";
+import { fontSizeLabelState } from "../store/selectors/font-size-label-state";
 
 export function FontButton() {
   const [fontSize, setFontSize] = useRecoilState(fontSizeState);

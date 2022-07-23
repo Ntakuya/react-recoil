@@ -1,7 +1,7 @@
 import React from "react";
 import { useRecoilState } from "recoil";
 import { CharacterCount } from "../components/char-counter";
-import { textState } from "../atoms/text-state";
+import { textState } from "../store/atoms/text-state";
 
 export function CharacterCounter() {
   return (
