@@ -1,6 +1,6 @@
 import React from "react";
 import { useRecoilState } from "recoil";
-import { fontSizeState } from "../atoms/font-size";
+import { fontSizeState } from "../store/atoms/font-size";
 
 export function Text() {
   const [fontSize] = useRecoilState(fontSizeState);

@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { FontButton } from "./components/font-button";
 import { Text } from "./components/text";
 import { CharacterCounter } from "./components/charator-counter";
-import { Sample } from "./sample";
+import { Sample } from "./components/sample";
 
 function App() {
   return (
