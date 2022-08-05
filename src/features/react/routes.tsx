@@ -1,8 +1,14 @@
-import type { } from "react"
+import { Route, Routes } from "react-router-dom"
 import { IndexPage } from "./pages/index"
+import { IntroducingPage } from "./pages/introducing-page"
 
-export const ReactRoutes = () => {
+export function ReactRoutes() {
     return (
-        <IndexPage />
+        <Routes>
+            <Route index element={<IndexPage />} />
+            <Route path="a" element={ <IntroducingPage />} />
+        </Routes>
     )
 }
+
+export default ReactRoutes
