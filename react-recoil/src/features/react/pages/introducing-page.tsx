@@ -1,5 +1,5 @@
 export function IntroducingPage() {
-    return (<div>dasmple</div>)
+  return <div>dasmple</div>;
 }
 
-export default IntroducingPage
+export default IntroducingPage;

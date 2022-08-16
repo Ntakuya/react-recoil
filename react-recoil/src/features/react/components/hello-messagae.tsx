@@ -1,9 +1,7 @@
 export interface HelloMessageProps {
-    name: string
+  name: string;
 }
 
-export function HelloMessage(props: HelloMessageProps): JSX.Element {
-    return (
-        <div>Hello { props.name }</div>
-    )
+export function HelloMessage(props: HelloMessageProps) {
+  return <div>Hello {props.name}</div>;
 }

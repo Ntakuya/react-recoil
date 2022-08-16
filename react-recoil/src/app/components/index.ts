@@ -1,1 +1,1 @@
-export * from "./side-navigation"
+export * from "./side-navigation";

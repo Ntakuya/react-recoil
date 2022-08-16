@@ -1,14 +1,9 @@
-import { formatName } from "../../utils-functions"
-import { User } from "../../types"
+import { formatName } from "../../utils-functions";
+import { User } from "../../types";
 
 const user: User = {
-  firstName: 'Harper',
-  lastName: 'Perez'
+  firstName: "Harper",
+  lastName: "Perez",
 };
 
-
-export const Element = (
-  <h1>
-    Hello, {formatName(user)}!
-  </h1>
-);
+export const Element = <h1>Hello, {formatName(user)}!</h1>;
