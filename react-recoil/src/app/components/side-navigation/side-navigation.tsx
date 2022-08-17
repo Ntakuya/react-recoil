@@ -26,6 +26,9 @@ export function SideNavigateion() {
         <li>
           <Link to="/react/react-docs/handling-event">handling event</Link>
         </li>
+        <li>
+          <Link to="/react/react-docs/lists-and-keys">Lists and Keys</Link>
+        </li>
       </ul>
     </nav>
   );
