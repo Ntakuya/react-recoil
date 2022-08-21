@@ -29,6 +29,9 @@ export function SideNavigateion() {
         <li>
           <Link to="/react/react-docs/lists-and-keys">Lists and Keys</Link>
         </li>
+        <li>
+          <Link to="/react/react-docs/lifting-state-up">Lifting State Up</Link>
+        </li>
       </ul>
     </nav>
   );

@@ -3,8 +3,9 @@ import {
   HandlingEventPage,
   IntroducingPage,
   StateAndLifeCyclePage,
+  ListsAndKeysPage,
+  LiftingStateUpPage,
 } from './pages';
-import { ListsAndKeysPage } from './pages/lists-and-keys-page';
 
 export function ReactDocsRoute() {
   return (
@@ -13,6 +14,8 @@ export function ReactDocsRoute() {
       <Route path="state-and-lifecycle" element={<StateAndLifeCyclePage />} />
       <Route path="handling-event" element={<HandlingEventPage />} />
       <Route path="lists-and-keys" element={<ListsAndKeysPage />} />
+      <Route path="lists-and-keys" element={<ListsAndKeysPage />} />
+      <Route path="lifting-state-up" element={<LiftingStateUpPage />} />
     </Routes>
   );
 }
