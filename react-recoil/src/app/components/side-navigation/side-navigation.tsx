@@ -32,6 +32,11 @@ export function SideNavigateion() {
         <li>
           <Link to="/react/react-docs/lifting-state-up">Lifting State Up</Link>
         </li>
+        <li>
+          <Link to="/react/react-docs/thinking-in-react">
+            Thinking In React
+          </Link>
+        </li>
       </ul>
     </nav>
   );
