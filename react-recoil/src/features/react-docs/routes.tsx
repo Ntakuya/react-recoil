@@ -6,6 +6,7 @@ import {
   ListsAndKeysPage,
   LiftingStateUpPage,
 } from './pages';
+import { ThinkingInReactPage } from './pages/thinking-in-react';
 
 export function ReactDocsRoute() {
   return (
@@ -16,6 +17,7 @@ export function ReactDocsRoute() {
       <Route path="lists-and-keys" element={<ListsAndKeysPage />} />
       <Route path="lists-and-keys" element={<ListsAndKeysPage />} />
       <Route path="lifting-state-up" element={<LiftingStateUpPage />} />
+      <Route path="thinking-in-react" element={<ThinkingInReactPage />} />
     </Routes>
   );
 }
