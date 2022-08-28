@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const routes = [
   { to: 'accessibility', children: 'Accessibility' },
   { to: 'code-spiliting', children: 'Code-Spiliting' },
+  { to: 'context', children: 'Context' },
 ];
 
 export interface SideNavProps {
