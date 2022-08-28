@@ -8,6 +8,10 @@ import { Sample } from './components/sample';
 import { SideNavigateion } from './app/components/side-navigation/side-navigation';
 
 const ReactRoutes = lazy(() => import('./features/react/routes'));
+const ReactAdvancedGuideRoutes = lazy(() =>
+  import('./features/react-advanced-guide/routes')
+);
+
 const layoutStyled = {
   display: 'flex',
   minHeight: '100vh',
@@ -47,6 +51,14 @@ function App() {
                 element={
                   <Suspense fallback={<div>loading...</div>}>
                     <ReactRoutes />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="react/advanced-guide/*"
+                element={
+                  <Suspense fallback={<div>loading...</div>}>
+                    <ReactAdvancedGuideRoutes />
                   </Suspense>
                 }
               />

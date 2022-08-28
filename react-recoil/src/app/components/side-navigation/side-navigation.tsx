@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import AdvancedGuideSideNav from '../../../features/react-advanced-guide/components/side-nav';
 
 const navStyled = {};
 
@@ -38,6 +39,7 @@ export function SideNavigateion() {
           </Link>
         </li>
       </ul>
+      <AdvancedGuideSideNav basePath="react/advanced-guide" />
     </nav>
   );
 }
