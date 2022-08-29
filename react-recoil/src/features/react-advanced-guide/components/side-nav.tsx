@@ -5,6 +5,7 @@ const routes = [
   { to: 'accessibility', children: 'Accessibility' },
   { to: 'code-spiliting', children: 'Code-Spiliting' },
   { to: 'context', children: 'Context' },
+  { to: 'error-boundary', children: 'Error Boundary' },
 ];
 
 export interface SideNavProps {
