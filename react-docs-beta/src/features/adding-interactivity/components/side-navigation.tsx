@@ -1,7 +1,10 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
 
-const routes = [{ path: "render-and-commit", component: "render-and-commit" }];
+const routes = [
+  { path: "render-and-commit", component: "render-and-commit" },
+  { path: "state-as-snapshot", component: "state-as-snapshot" },
+];
 
 export type AddingInteractivitySideNavaitionProps = {
   parentPath?: string;
