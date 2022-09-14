@@ -1,9 +1,12 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import FallBackUi from "./components/fall-back-ui";
-import SideNavigation from "./features/app/components/side-navigation";
+import SideNavigation from "./components/side-navigation";
 
 const DescribingUI = lazy(() => import("./features/describing-ui/routes"));
+const AddingInteractivityRoute = lazy(
+  () => import("./features/adding-interactivity/routes")
+);
 
 function App() {
   return (
@@ -22,6 +25,14 @@ function App() {
                 </Suspense>
               }
             ></Route>
+            <Route
+              path="adding-interactivity/*"
+              element={
+                <Suspense fallback={<FallBackUi />}>
+                  <AddingInteractivityRoute />
+                </Suspense>
+              }
+            />
             <Route path="*" element={<Navigate to="learn" />} />
           </Routes>
         </div>

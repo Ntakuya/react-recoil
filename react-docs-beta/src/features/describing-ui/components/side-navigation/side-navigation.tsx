@@ -1,7 +1,9 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
 
-const routes = [{ path: "your-first-component", component: "string" }];
+const routes = [
+  { path: "your-first-component", component: "your-first-component" },
+];
 
 export type DescribingUISideNavaitionProps = {
   parentPath?: string;
