@@ -1,8 +1,11 @@
 import { lazy, Suspense } from "react";
-import FallBackUi from "../../../components/fall-back-ui";
+import FallBackUi from "./fall-back-ui";
 
 const DescribingUiSideNavigation = lazy(
-  () => import("../../describing-ui/components/side-navigation")
+  () => import("../features/describing-ui/components/side-navigation")
+);
+const AddingInteractivySideNavigation = lazy(
+  () => import("../features/adding-interactivity/components/side-navigation")
 );
 
 export function SideNavigation() {
@@ -10,6 +13,7 @@ export function SideNavigation() {
     <div>
       <Suspense fallback={<FallBackUi />}>
         <DescribingUiSideNavigation parentPath="learn" />
+        <AddingInteractivySideNavigation parentPath="adding-interactivity" />
       </Suspense>
     </div>
   );
