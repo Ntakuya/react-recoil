@@ -1,12 +1,21 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
 
-const routes = [
+type Route = {
+  path: string;
+  component: string;
+};
+
+const routes: Array<Route> = [
   { path: "render-and-commit", component: "render-and-commit" },
   { path: "state-as-snapshot", component: "state-as-snapshot" },
   {
     path: "queueing-a-series-of-state-updates",
     component: "queueing-a-series-of-state-updates",
+  },
+  {
+    path: "updating-objects-in-state",
+    component: "updating-objects-in-state",
   },
 ];
 
